@@ -1,24 +1,11 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/dashboard">Dashbaord</router-link>
+    <!--router-link to="/dashboard">Home</router-link--> 
+    <router-link to="/dashboard">Dashboard</router-link>
   </nav>
   <router-view/>
-
-  <NotificationPanel/>
 </template>
 
-<script>
-import NotificationPanel from './components/NotificationPanel.vue'
-
-export default {
-  name: 'App',
-  components: {
-    NotificationPanel
-  }
-}
-</script>
 
 <style>
 #app {
